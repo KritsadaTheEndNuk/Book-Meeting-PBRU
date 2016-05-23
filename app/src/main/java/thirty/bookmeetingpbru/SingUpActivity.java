@@ -52,6 +52,10 @@ public class SingUpActivity extends AppCompatActivity {
             MyAlert myAlert = new MyAlert();
             myAlert.myDialog(this, "มีช่องว่าง",
                     "กรุณากรอกทุกช่อง คะ");
+        }else if (idCardString.length() !=13) { // Check idCard
+            MyAlert myAlert = new MyAlert();
+            myAlert.myDialog(this, "รหัสบัตรประชาชนผิด",
+                    "รหัสบัตรประชาชน ต้องมี 13 หลักเท่านั้น");
         }
 
 
